@@ -1,0 +1,44 @@
+{
+  "name": "@alternacrow/corvidae",
+  "version": "0.0.1",
+  "description": "wip",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./dictionary": {
+      "types": "./dist/dictionary.d.ts",
+      "import": "./dist/dictionary.mjs",
+      "require": "./dist/dictionary.js"
+    },
+    "./seedrandom": {
+      "types": "./dist/seedrandom.d.ts",
+      "import": "./dist/seedrandom.mjs",
+      "require": "./dist/seedrandom.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": ["dist", "package.json"],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "alternacrow",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "packageManager": "pnpm@9.15.3"
+}
